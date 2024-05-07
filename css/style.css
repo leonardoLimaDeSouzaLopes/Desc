@@ -1,0 +1,300 @@
+:root {
+    --branco-principal: #fff;
+    --vermelho-principal: #ff2020;
+    --preto-fonte: #000;
+    --cinza-fonte: rgb(109, 109, 109);
+    --fonte-principal: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --tamanho-fonte-normal: 20px;
+    --tamanho-fonte-titulo-h1: 40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-principal);
+}
+/*NAVBAR START*/
+a {
+    color: var(--branco-principal);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24p;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--vermelho-principal);
+    height: 8vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.nav-img {
+    background-color: var(--branco-principal);
+    border-radius: 35px;
+    height: auto;
+    width: auto;
+}
+
+.nav-img img {
+    height: 60px;
+}
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+    /*muda o formato do cursor*/
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: var(--branco-principal);
+    margin: 8px;
+}
+/*NAVBAR END*/
+
+/*CARD START*/
+
+.container-cards {
+    margin: 0 17%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 185, 185);
+    margin-right: 17%;
+    margin-left: 17%;
+    margin-top: 12.5%;
+}
+
+.bnt {
+    width: 90px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 65px;
+}
+
+.bnt button:hover {
+    background-color: #ff0000;
+}
+
+.button-card {
+    width: 100px;
+}
+
+.cards-firstrow {
+    display: flex;
+    flex-direction: row;
+}
+
+.cards-secondrow {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    width: 320px;
+    padding: 100px 150px;
+    background-color: var(--branco-principal);
+}
+
+.card img {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 45px;
+}
+
+.card h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #000000;
+}
+
+.card p {
+    text-align: center;
+    margin-top: 20px;
+    color: #000000;
+}
+
+.card button {
+    background-color: var(--branco-principal);
+    border-radius: 20px;
+    border: 10px;
+    border-color: var(--preto-fonte);
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 110px;
+}
+
+.card button:hover {
+    background-color: #cdcdcd;
+}
+
+.text-card a {
+    font-size: large;
+    color: #77b0f2;
+}
+/*CARD END*/
+
+/*CONTATO START*/
+.fundo {
+    background-image: url("../images/Etec-Guaianases-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 3em 25%;
+}
+
+.fale-conosco {
+    background-color: var(--branco-principal);
+    text-align: center;
+    border: solid;
+    padding: 1.5em 3em;
+    border-color: var(--preto-principal);
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+.titulo-contato {
+    font-size: var(--fonte-titulo-h1);
+}
+
+.inputs {
+    margin: 0
+}
+
+.label {
+    text-align: right;
+    margin-left: 10%;
+}
+
+.input {
+    justify-self: right;
+    width: 80%;
+    margin-left: 1em;
+    margin-right: 10%;
+}
+
+.espaco-input {
+    display: flex;
+    margin: 1em 0;
+}
+
+.botao-enviar {
+    width: 60%;
+    margin: 0 20%;
+}
+/*CONTATO END*/
+
+/*FOOTER START*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+}
+
+.footer-01 {
+    display: flex;
+    background-color: var(--cinza-fonte);
+}
+
+.footer-01 h1 {
+    font-size: 5vw;
+    color: var(--branco-principal);
+}
+
+.footer-01 button {
+    font-size: 1vw;   
+    border-radius: 25px;
+    color: aliceblue;
+    background-color: var(--vermelho-principal);
+    margin-top: 4%;
+    margin-left: 35vw;
+}
+
+.contact {
+    display: flex;
+    margin: 5% 10%;
+    align-items: center;
+}
+
+.footer-02 {
+    background-color: var(--vermelho-principal);
+    color: var(--branco-principal);
+    display: flex;
+    width: 80%;
+    padding: 2% 10%;
+}
+
+.footer-02 h1 {
+    font-size: 20px;
+}
+
+.footer-02 h2 {
+    font-size: 15px;
+    margin-top: 2%;
+}
+
+.footer-02 h3 {
+    font-size: 45px;
+}
+
+.footer-part {
+    padding: 20px;
+}
+
+.right-icons {
+    display: flex;
+    width: 25%;
+}
+
+.right-icons a {
+    height: auto;
+    padding-left: 10%;
+    padding-top: 3%;
+}
+
+.right-icons img {
+    width: 40px;
+}
+
+.footer-bottom {
+    background-color: var(--vermelho-principal);
+    color: var(--branco-principal);
+    display: flex;
+    width: 80%;
+    padding: 2% 10%;
+}
+
+.nav-list  {
+    color: var(--preto-principal);
+    padding-left: 40%;
+}
+
+.footer-bottom a {
+    color: var(--preto-principal);
+}
+/*FOOTER END*/
