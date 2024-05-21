@@ -15,7 +15,7 @@
 
     <section class="fundo">
 
-        <div class="fale-conosco">
+        <form class="fale-conosco" name="fale-conosco" action="contatoEnviar.php" method="post">
 
             <h1 class="titulo-contato">Fale Conosco</h1>
 
@@ -73,7 +73,7 @@
 
             </div>
 
-        </div>
+        </form>
 
     </section>
 
